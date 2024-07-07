@@ -43,7 +43,7 @@
     <script>
         async function fetchHeadlines() {
             try {
-                const response = await fetch('/api/fetchnews');
+                const response = await fetch('https://investing-news.vercel.app/api/fetchnews');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
